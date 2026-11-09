@@ -11,6 +11,7 @@ jobs:
   remove-autoclose:
     # Only run if the issue has the autoclose label
     if: |
+      github.repository == 'anthropics/claude-code' &&
       github.event.issue.state == 'open' &&
       contains(github.event.issue.labels.*.name, 'autoclose') &&
       github.event.comment.user.login != 'github-actions[bot]'

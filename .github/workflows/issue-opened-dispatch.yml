@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   notify:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
