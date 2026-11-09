@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   allowed-non-write-check:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

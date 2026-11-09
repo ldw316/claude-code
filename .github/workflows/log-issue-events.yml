@@ -6,6 +6,7 @@ on:
 
 jobs:
   log-to-statsig:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     permissions:
       issues: read

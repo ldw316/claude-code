@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   comment:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   sweep:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

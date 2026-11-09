@@ -14,6 +14,7 @@ concurrency:
 
 jobs:
   lock-closed-issues:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     steps:
       - name: Lock closed issues after 7 days of inactivity

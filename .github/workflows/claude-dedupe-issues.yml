@@ -12,6 +12,7 @@ on:
 
 jobs:
   claude-dedupe-issues:
+    if: github.repository == 'anthropics/claude-code'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
